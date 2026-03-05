@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Undangan Pernikahan | Alfat & Bintang</title>
     
+    <!-- Meta Tags untuk SEO dan Social Media -->
+    <meta name="description" content="Undangan pernikahan digital Alfat & Bintang - 10 Maret 2026 di Galuh Mas Karawang">
+    <meta name="keywords" content="undangan pernikahan, wedding invitation, Alfat, Bintang, Karawang">
+    <meta name="author" content="Alfat & Bintang">
+    <meta property="og:title" content="Undangan Pernikahan Alfat & Bintang">
+    <meta property="og:description" content="Dengan memohon rahmat dan ridho Allah, kami mengundang Anda untuk hadir di acara pernikahan kami.">
+    <meta property="og:image" content="https://img.icons8.com/color/512/wedding-rings.png">
+    <meta property="og:url" content="https://yourdomain.com">
+    
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="https://img.icons8.com/color/96/wedding-rings.png">
     
@@ -15,6 +24,9 @@
     
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Manifest -->
+    <link rel="manifest" href="manifest.json">
     
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
@@ -145,7 +157,7 @@
             </div>
         </section>
         
-        <!-- Couple Section -->
+        <!-- Couple Section (Tanpa Foto) -->
         <section id="couple" class="couple-section">
             <div class="section-header">
                 <h2 class="section-title">Pasangan Mempelai</h2>
@@ -153,9 +165,8 @@
             </div>
             <div class="couple-container">
                 <div class="couple-card groom-card">
-                    <div class="couple-image">
-                        <!-- FOTO ALFAT - letakkan file di folder images/alfat.jpg -->
-                        <img src="images/alfat.jpg" alt="Alfat" class="couple-img">
+                    <div class="couple-icon-large">
+                        <i class="fas fa-user-tie"></i>
                     </div>
                     <div class="couple-details">
                         <h3 class="couple-name">Alfat</h3>
@@ -186,9 +197,8 @@
                 </div>
                 
                 <div class="couple-card bride-card">
-                    <div class="couple-image">
-                        <!-- FOTO BINTANG - letakkan file di folder images/bintang.jpg -->
-                        <img src="images/bintang.jpg" alt="Bintang" class="couple-img">
+                    <div class="couple-icon-large">
+                        <i class="fas fa-user"></i>
                     </div>
                     <div class="couple-details">
                         <h3 class="couple-name">Bintang</h3>
@@ -311,58 +321,52 @@
             </div>
         </section>
         
-        <!-- Gallery Section -->
+        <!-- Gallery Section (Diganti dengan Love Story) -->
         <section id="gallery" class="gallery-section">
             <div class="section-header">
-                <h2 class="section-title">Galeri Kenangan</h2>
-                <p class="section-subtitle">Momen indah dalam perjalanan cinta kami</p>
+                <h2 class="section-title">Kisah Cinta</h2>
+                <p class="section-subtitle">Perjalanan cinta dalam untaian kata</p>
             </div>
-            <div class="gallery-container">
-                <div class="gallery-grid" id="galleryGrid">
-                    <div class="gallery-item">
-                        <div class="gallery-image">
-                            <!-- FOTO GALLERY 1 - letakkan file di folder images/gallery-1.jpg -->
-                            <img src="images/gallery-1.jpg" alt="Prewedding Photo 1">
-                            <div class="gallery-overlay">
-                                <i class="fas fa-search-plus"></i>
-                                <p class="gallery-caption">Prewedding Session</p>
-                            </div>
-                        </div>
+            <div class="love-story-container">
+                <div class="love-story-item">
+                    <div class="love-story-icon">
+                        <i class="fas fa-hand-holding-heart"></i>
                     </div>
-                    <div class="gallery-item">
-                        <div class="gallery-image">
-                            <!-- FOTO GALLERY 2 - letakkan file di folder images/gallery-2.jpg -->
-                            <img src="images/gallery-2.jpg" alt="Beach Session">
-                            <div class="gallery-overlay">
-                                <i class="fas fa-search-plus"></i>
-                                <p class="gallery-caption">Beach Session</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="gallery-item">
-                        <div class="gallery-image">
-                            <!-- FOTO GALLERY 3 - letakkan file di folder images/gallery-3.jpg -->
-                            <img src="images/gallery-3.jpg" alt="Sunset Moments">
-                            <div class="gallery-overlay">
-                                <i class="fas fa-search-plus"></i>
-                                <p class="gallery-caption">Sunset Moments</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="gallery-item">
-                        <div class="gallery-image">
-                            <!-- FOTO GALLERY 4 - letakkan file di folder images/gallery-4.jpg -->
-                            <img src="images/gallery-4.jpg" alt="Engagement Photo">
-                            <div class="gallery-overlay">
-                                <i class="fas fa-search-plus"></i>
-                                <p class="gallery-caption">Engagement Day</p>
-                            </div>
-                        </div>
+                    <div class="love-story-content">
+                        <h3>Pertemuan Pertama</h3>
+                        <p>Bertemu di sebuah acara keluarga pada tahun 2025. Sebuah pertemuan yang tidak disengaja namun terasa begitu berarti.</p>
                     </div>
                 </div>
-                <button class="btn-view-more" id="viewMoreGallery">
-                    <i class="fas fa-images"></i> Lihat Lebih Banyak
-                </button>
+                
+                <div class="love-story-item">
+                    <div class="love-story-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="love-story-content">
+                        <h3>Mulai Berkenalan</h3>
+                        <p>Dari perbincangan ringan, tumbuh rasa nyaman dan keinginan untuk saling mengenal lebih dalam.</p>
+                    </div>
+                </div>
+                
+                <div class="love-story-item">
+                    <div class="love-story-icon">
+                        <i class="fas fa-ring"></i>
+                    </div>
+                    <div class="love-story-content">
+                        <h3>Lamaran</h3>
+                        <p>Bulan Januari 2026 menjadi momen ketika Alfat memantapkan hati untuk melamar Bintang.</p>
+                    </div>
+                </div>
+                
+                <div class="love-story-item">
+                    <div class="love-story-icon">
+                        <i class="fas fa-glass-cheers"></i>
+                    </div>
+                    <div class="love-story-content">
+                        <h3>Menuju Pernikahan</h3>
+                        <p>Setelah melalui berbagai proses, akhirnya kami sampai di hari bahagia ini.</p>
+                    </div>
+                </div>
             </div>
         </section>
         
@@ -401,7 +405,6 @@
                                 referrerpolicy="no-referrer-when-downgrade">
                             </iframe>
                         </div>
-                        <!-- END GOOGLE MAPS -->
                     </div>
                     <div class="location-details">
                         <h3 id="locationTitle">Galuh Mas Karawang</h3>
@@ -691,7 +694,7 @@
                     <a href="#opening">Undangan</a>
                     <a href="#couple">Pasangan</a>
                     <a href="#events">Acara</a>
-                    <a href="#gallery">Galeri</a>
+                    <a href="#gallery">Kisah Cinta</a>
                     <a href="#location">Lokasi</a>
                     <a href="#rsvp">RSVP</a>
                 </div>
@@ -708,20 +711,6 @@
             </div>
         </div>
     </footer>
-    
-    <!-- Modal Gallery -->
-    <div class="modal" id="galleryModal">
-        <div class="modal-content">
-            <span class="modal-close">&times;</span>
-            <div class="modal-body">
-                <img id="modalImage" src="" alt="">
-                <div class="modal-nav">
-                    <button class="modal-prev"><i class="fas fa-chevron-left"></i></button>
-                    <button class="modal-next"><i class="fas fa-chevron-right"></i></button>
-                </div>
-            </div>
-        </div>
-    </div>
     
     <!-- Toast Notifications -->
     <div class="toast-container" id="toastContainer"></div>

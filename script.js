@@ -198,101 +198,19 @@ function initMusicPlayer() {
     });
 }
 
-// ===== 4. GALLERY =====
-function initGallery() {
-    const galleryItems = document.querySelectorAll('.gallery-item');
-    const galleryModal = document.getElementById('galleryModal');
-    const modalImage = document.getElementById('modalImage');
-    const modalClose = document.querySelector('.modal-close');
-    const modalPrev = document.querySelector('.modal-prev');
-    const modalNext = document.querySelector('.modal-next');
+function initializeWebsite() {
+    initNavigation();
+    initCountdown();
+    initMusicPlayer();
+    // initGallery(); // DIHAPUS - Tidak ada gallery
+    initRSVPForm();
+    initLocation();
+    initWishes();
+    initEventListeners();
     
-    if (!galleryItems.length) return;
-    
-    let currentImageIndex = 0;
-    const images = Array.from(galleryItems).map(item => {
-        return item.querySelector('img').src;
-    });
-    
-    galleryItems.forEach((item, index) => {
-        item.addEventListener('click', function() {
-            currentImageIndex = index;
-            modalImage.src = images[currentImageIndex];
-            galleryModal.style.display = 'flex';
-            document.body.style.overflow = 'hidden';
-        });
-    });
-    
-    if (modalClose) {
-        modalClose.addEventListener('click', () => {
-            galleryModal.style.display = 'none';
-            document.body.style.overflow = 'auto';
-        });
-    }
-    
-    galleryModal.addEventListener('click', (e) => {
-        if (e.target === galleryModal) {
-            galleryModal.style.display = 'none';
-            document.body.style.overflow = 'auto';
-        }
-    });
-    
-    if (modalPrev) {
-        modalPrev.addEventListener('click', () => {
-            currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
-            modalImage.src = images[currentImageIndex];
-        });
-    }
-    
-    if (modalNext) {
-        modalNext.addEventListener('click', () => {
-            currentImageIndex = (currentImageIndex + 1) % images.length;
-            modalImage.src = images[currentImageIndex];
-        });
-    }
-    
-    const viewMoreBtn = document.getElementById('viewMoreGallery');
-    if (viewMoreBtn) {
-        viewMoreBtn.addEventListener('click', function() {
-            showToast('Memuat lebih banyak foto...', 'info');
-            
-            setTimeout(() => {
-                const galleryGrid = document.getElementById('galleryGrid');
-                const newImages = [
-                    'https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80',
-                    'https://images.unsplash.com/photo-1465495976277-4387d4b0e4a6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80',
-                    'https://images.unsplash.com/photo-1523438885200-e635ba2c371e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1374&q=80'
-                ];
-                
-                newImages.forEach(src => {
-                    const newItem = document.createElement('div');
-                    newItem.className = 'gallery-item';
-                    newItem.innerHTML = `
-                        <div class="gallery-image">
-                            <img src="${src}" alt="Additional Photo">
-                            <div class="gallery-overlay">
-                                <i class="fas fa-search-plus"></i>
-                                <p class="gallery-caption">Memory</p>
-                            </div>
-                        </div>
-                    `;
-                    galleryGrid.appendChild(newItem);
-                    
-                    newItem.addEventListener('click', function() {
-                        const imgSrc = this.querySelector('img').src;
-                        modalImage.src = imgSrc;
-                        galleryModal.style.display = 'flex';
-                        document.body.style.overflow = 'hidden';
-                        
-                        images.push(imgSrc);
-                        currentImageIndex = images.length - 1;
-                    });
-                });
-                
-                showToast('Foto berhasil ditambahkan!', 'success');
-            }, 1500);
-        });
-    }
+    setTimeout(() => {
+        showToast('✨ Selamat datang di undangan pernikahan kami!', 'success');
+    }, 2000);
 }
 
 // ===== 5. RSVP FORM =====

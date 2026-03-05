@@ -1,6 +1,6 @@
 # Undangan Pernikahan Digital - Alfat & Bintang
 
-Website undangan pernikahan digital dengan tema elegan dan menenangkan. Acara akan dilaksanakan dalam 4 hari dari sekarang (tanggal otomatis menyesuaikan).
+Website undangan pernikahan digital dengan tema elegan dan menenangkan. Acara akan dilaksanakan pada tanggal **10 Maret 2026** di Galuh Mas Karawang.
 
 ## Fitur Utama
 
@@ -9,15 +9,15 @@ Website undangan pernikahan digital dengan tema elegan dan menenangkan. Acara ak
 - Desain responsif untuk laptop dan smartphone
 - Animasi smooth dan transisi elegan
 - Typography premium dengan 3 font Google
+- **Tanpa foto** - Fokus pada teks dan elemen dekoratif
 
 ### 🎵 **Musik & Suara**
-- Musik pernikahan otomatis diputar saat website terbuka
-- Kontrol volume otomatis (50%)
-- Tombol toggle play/pause
+- Musik pernikahan dengan kontrol play/pause
+- Tombol toggle musik di pojok kanan bawah
 - Pause otomatis saat tab tidak aktif
 
 ### ⏳ **Countdown Timer**
-- Hitung mundur real-time ke tanggal pernikahan (4 hari dari sekarang)
+- Hitung mundur real-time ke tanggal pernikahan (10 Maret 2026)
 - Display hari, jam, menit, detik
 - Auto update setiap detik
 
@@ -35,16 +35,16 @@ Website undangan pernikahan digital dengan tema elegan dan menenangkan. Acara ak
    - Statistik real-time
    - Penyimpanan data di localStorage
 
-#### 2. **Galeri Foto**
-   - Lightbox dengan navigation
+#### 2. **Kisah Cinta (Menggantikan Galeri Foto)**
+   - Timeline perjalanan cinta
+   - Desain dengan icon dekoratif
    - Efek hover elegan
-   - Tombol "Lihat Lebih Banyak"
-   - Modal gallery untuk view fullscreen
 
 #### 3. **Lokasi Acara**
    - Multiple venue (akad, resepsi, syukuran)
    - Petunjuk arah ke Google Maps
    - Share location
+   - Peta interaktif
 
 #### 4. **Wall Ucapan**
    - Form tambah ucapan
@@ -55,14 +55,14 @@ Website undangan pernikahan digital dengan tema elegan dan menenangkan. Acara ak
 #### 5. **Amplop Digital**
    - Informasi rekening bank
    - Tombol copy untuk memudahkan transfer
-   - Multi bank support
+   - Multi bank support (BCA, Mandiri)
 
 ### 🛠️ **Fitur Teknis**
 - Progressive Web App (PWA)
 - Service Worker untuk offline capability
 - LocalStorage untuk data persistence
 - Toast notifications system
-- Keyboard shortcuts
+- Keyboard shortcuts (Spasi untuk musik, ESC untuk modal)
 - Page visibility API
 
 ### 📊 **Statistik & Analytics**
