@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan | Alfat & Bintang</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/color/96/wedding-rings.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <h2 class="loading-text">Memuat Undangan...</h2>
+        </div>
+    </div>
+    
+    <!-- Music Control -->
+    <div class="music-control">
+        <button class="music-btn" id="toggleMusic">
+            <i class="fas fa-music"></i>
+            <span>Putar Musik</span>
+        </button>
+        <audio id="weddingMusic" loop>
+            <source src="c:\Users\rahsy\Downloads\asepirawan20-wedding-background-music-5529.mp3" type="audio/mpeg">
+            Browser Anda tidak mendukung elemen audio.
+        </audio>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-text">Alfat & Bintang</span>
+                <span class="nav-date" id="navDate">10 Maret 2026</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#opening" class="nav-link">Undangan</a></li>
+                <li><a href="#couple" class="nav-link">Pasangan</a></li>
+                <li><a href="#events" class="nav-link">Acara</a></li>
+                <li><a href="#gallery" class="nav-link">Galeri</a></li>
+                <li><a href="#location" class="nav-link">Lokasi</a></li>
+                <li><a href="#rsvp" class="nav-link">RSVP</a></li>
+                <li><a href="#wishes" class="nav-link">Ucapan</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+    
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-background"></div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <p class="hero-subtitle">The Wedding of</p>
+                <h1 class="hero-title">Kebahagiaan Abadi</h1>
+                <div class="hero-names">
+                    <span class="name groom-name">Alfat</span>
+                    <span class="ampersand">&</span>
+                    <span class="name">Bintang</span>
+                </div>
+                <p class="hero-date" id="heroDate">10 Maret 2026</p>
+                <div class="hero-countdown">
+                    <p>Save The Date</p>
+                    <div class="countdown-grid" id="countdown">
+                        <div class="countdown-item">
+                            <span class="number" id="days">00</span>
+                            <span class="label">Hari</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="number" id="hours">00</span>
+                            <span class="label">Jam</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="number" id="minutes">00</span>
+                            <span class="label">Menit</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="number" id="seconds">00</span>
+                            <span class="label">Detik</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn-open-invitation" id="openInvitation">
+                    <i class="fas fa-envelope"></i> Buka Undangan
+                </button>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+        
+        <!-- Opening Message -->
+        <section id="opening" class="opening-section">
+            <div class="opening-container">
+                <div class="opening-card">
+                    <div class="opening-header">
+                        <i class="fas fa-quote-left opening-quote"></i>
+                        <h2 class="opening-title">Undangan Pernikahan</h2>
+                    </div>
+                    <div class="opening-content">
+                        <p class="opening-verse">
+                            "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, 
+                            agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. 
+                            Sungguh, pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir."
+                        </p>
+                        <p class="opening-verse-source">(QS. Ar-Rum: 21)</p>
+                        <div class="opening-message">
+                            <p>Dengan memohon rahmat dan ridho Allah Subhanahu wa Ta'ala,</p>
+                            <p>kami bermaksud mengundang Bapak/Ibu/Saudara/i,</p>
+                            <p>teman sejawat, serta handai taulan</p>
+                            <p>untuk menghadiri acara pernikahan putra-putri kami:</p>
+                        </div>
+                        <div class="opening-names">
+                            <h3>Alfat</h3>
+                            <p>Putra dari Bapak Herry Sukahardi & Ibu</p>
+                            <h3 class="and">&</h3>
+                            <h3>Bintang</h3>
+                            <p>Putri dari Bapak Valen & Ibu</p>
+                        </div>
+                        <button class="btn-continue" id="continueBtn">
+                            <i class="fas fa-arrow-down"></i> Lanjutkan Membaca
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Couple Section -->
+        <section id="couple" class="couple-section">
+            <div class="section-header">
+                <h2 class="section-title">Pasangan Mempelai</h2>
+                <p class="section-subtitle">Cinta adalah ketika jiwa menemukan pasangannya</p>
+            </div>
+            <div class="couple-container">
+                <div class="couple-card groom-card">
+                    <div class="couple-image">
+                        <!-- FOTO ALFAT - letakkan file di folder images/alfat.jpg -->
+                        <img src="images/alfat.jpg" alt="Alfat" class="couple-img">
+                    </div>
+                    <div class="couple-details">
+                        <h3 class="couple-name">Alfat</h3>
+                        <p class="couple-role">Mempelai Pria</p>
+                        <p class="couple-bio">
+                            Putra pertama dari Bapak Herry Sukahardi & Ibu. 
+                            Lulusan Teknik Manajemen, 
+                            saat ini bekerja sebagai Pengusaha.
+                        </p>
+                        <div class="couple-social">
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="couple-heart">
+                    <div class="heart-animation">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <p class="meet-story">
+                        <i class="fas fa-heart"></i>
+                        Bertemu pertama kali di tahun 2025
+                        <i class="fas fa-heart"></i>
+                    </p>
+                </div>
+                
+                <div class="couple-card bride-card">
+                    <div class="couple-image">
+                        <!-- FOTO BINTANG - letakkan file di folder images/bintang.jpg -->
+                        <img src="images/bintang.jpg" alt="Bintang" class="couple-img">
+                    </div>
+                    <div class="couple-details">
+                        <h3 class="couple-name">Bintang</h3>
+                        <p class="couple-role">Mempelai Wanita</p>
+                        <p class="couple-bio">
+                            Putri kedua dari Bapak Valen & Ibu. 
+                            Lulusan Universitas Indonesia, 
+                            saat ini bekerja sebagai Dosen.
+                        </p>
+                        <div class="couple-social">
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Events Timeline -->
+        <section id="events" class="events-section">
+            <div class="section-header">
+                <h2 class="section-title">Jadwal Acara</h2>
+                <p class="section-subtitle">Momen spesial yang akan kami bagi bersama</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">
+                        <span class="date-day" id="eventDay1">10</span>
+                        <span class="date-month" id="eventMonth1">Maret</span>
+                        <span class="date-year" id="eventYear1">2026</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <i class="fas fa-mosque"></i>
+                        </div>
+                        <div class="timeline-details">
+                            <h3 class="timeline-title">Akad Nikah</h3>
+                            <div class="timeline-time">
+                                <i class="far fa-clock"></i>
+                                <span id="akadTime">09:00 - 11:00 WIB</span>
+                            </div>
+                            <div class="timeline-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Galuh Mas Karawang (Lantai 2), Jl. Galuh Mas Raya, Sukaharja, Telukjambe Timur, Karawang, Jawa Barat 41361</span>
+                            </div>
+                            <p class="timeline-description">
+                                Prosesi akad nikah akan dilaksanakan dengan khidmat di Galuh Mas Karawang.
+                            </p>
+                            <button class="btn-location" data-location="-6.326975,107.289621">
+                                <i class="fas fa-directions"></i> Lihat Lokasi
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">
+                        <span class="date-day" id="eventDay2">10</span>
+                        <span class="date-month" id="eventMonth2">Maret</span>
+                        <span class="date-year" id="eventYear2">2026</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <i class="fas fa-glass-cheers"></i>
+                        </div>
+                        <div class="timeline-details">
+                            <h3 class="timeline-title">Resepsi Pernikahan</h3>
+                            <div class="timeline-time">
+                                <i class="far fa-clock"></i>
+                                <span id="resepsiTime">18:00 - 21:00 WIB</span>
+                            </div>
+                            <div class="timeline-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Galuh Mas Karawang (Ballroom), Jl. Galuh Mas Raya, Sukaharja, Telukjambe Timur, Karawang, Jawa Barat 41361</span>
+                            </div>
+                            <p class="timeline-description">
+                                Acara resepsi pernikahan dengan tema "Eternal Bloom". Dress code: Pastel colors.
+                            </p>
+                            <button class="btn-location" data-location="-6.326975,107.289621">
+                                <i class="fas fa-directions"></i> Lihat Lokasi
+                            </button>
+                            <button class="btn-calendar" data-event="Resepsi Pernikahan Alfat & Bintang" data-date="2026-03-10T18:00:00" data-location="Galuh Mas Karawang">
+                                <i class="far fa-calendar-plus"></i> Tambah ke Kalender
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">
+                        <span class="date-day" id="eventDay3">11</span>
+                        <span class="date-month" id="eventMonth3">Maret</span>
+                        <span class="date-year" id="eventYear3">2026</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <div class="timeline-details">
+                            <h3 class="timeline-title">Syukuran & Silaturahmi</h3>
+                            <div class="timeline-time">
+                                <i class="far fa-clock"></i>
+                                <span id="syukuranTime">10:00 - 14:00 WIB</span>
+                            </div>
+                            <div class="timeline-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Galuh Mas Karawang (Area Belakang), Jl. Galuh Mas Raya, Sukaharja, Telukjambe Timur, Karawang, Jawa Barat 41361</span>
+                            </div>
+                            <p class="timeline-description">
+                                Acara syukuran dan silaturahmi dengan keluarga besar kedua belah pihak.
+                            </p>
+                            <button class="btn-location" data-location="-6.326975,107.289621">
+                                <i class="fas fa-directions"></i> Lihat Lokasi
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery-section">
+            <div class="section-header">
+                <h2 class="section-title">Galeri Kenangan</h2>
+                <p class="section-subtitle">Momen indah dalam perjalanan cinta kami</p>
+            </div>
+            <div class="gallery-container">
+                <div class="gallery-grid" id="galleryGrid">
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <!-- FOTO GALLERY 1 - letakkan file di folder images/gallery-1.jpg -->
+                            <img src="images/gallery-1.jpg" alt="Prewedding Photo 1">
+                            <div class="gallery-overlay">
+                                <i class="fas fa-search-plus"></i>
+                                <p class="gallery-caption">Prewedding Session</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <!-- FOTO GALLERY 2 - letakkan file di folder images/gallery-2.jpg -->
+                            <img src="images/gallery-2.jpg" alt="Beach Session">
+                            <div class="gallery-overlay">
+                                <i class="fas fa-search-plus"></i>
+                                <p class="gallery-caption">Beach Session</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <!-- FOTO GALLERY 3 - letakkan file di folder images/gallery-3.jpg -->
+                            <img src="images/gallery-3.jpg" alt="Sunset Moments">
+                            <div class="gallery-overlay">
+                                <i class="fas fa-search-plus"></i>
+                                <p class="gallery-caption">Sunset Moments</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <!-- FOTO GALLERY 4 - letakkan file di folder images/gallery-4.jpg -->
+                            <img src="images/gallery-4.jpg" alt="Engagement Photo">
+                            <div class="gallery-overlay">
+                                <i class="fas fa-search-plus"></i>
+                                <p class="gallery-caption">Engagement Day</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn-view-more" id="viewMoreGallery">
+                    <i class="fas fa-images"></i> Lihat Lebih Banyak
+                </button>
+            </div>
+        </section>
+        
+        <!-- Location Map -->
+        <section id="location" class="location-section">
+            <div class="section-header">
+                <h2 class="section-title">Lokasi Acara</h2>
+                <p class="section-subtitle">Temukan jalan menuju kebahagiaan kami</p>
+            </div>
+            <div class="location-container">
+                <div class="location-tabs">
+                    <button class="location-tab active" data-location="akad">
+                        <i class="fas fa-mosque"></i>
+                        <span>Akad Nikah</span>
+                    </button>
+                    <button class="location-tab" data-location="resepsi">
+                        <i class="fas fa-glass-cheers"></i>
+                        <span>Resepsi</span>
+                    </button>
+                    <button class="location-tab" data-location="syukuran">
+                        <i class="fas fa-home"></i>
+                        <span>Syukuran</span>
+                    </button>
+                </div>
+                <div class="location-content">
+                    <div class="map-container">
+                        <!-- GOOGLE MAPS - GALUH MAS KARAWANG -->
+                        <div class="map" id="map">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.5170566564434!2d107.28962147483004!3d-6.326975893662546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6977d5bb571ed3%3A0x37976cc019f9def5!2sGaluh%20Mas%20Karawang!5e0!3m2!1sid!2sid!4v1772637596736!5m2!1sid!2sid" 
+                                width="100%" 
+                                height="400" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                        <!-- END GOOGLE MAPS -->
+                    </div>
+                    <div class="location-details">
+                        <h3 id="locationTitle">Galuh Mas Karawang</h3>
+                        <div class="location-info">
+                            <div class="info-item">
+                                <i class="far fa-clock"></i>
+                                <div>
+                                    <h4>Waktu</h4>
+                                    <p id="locationTime">09:00 - 11:00 WIB</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4>Alamat</h4>
+                                    <p id="locationAddress">Jl. Galuh Mas Raya, Sukaharja, Telukjambe Timur, Karawang, Jawa Barat 41361</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-info-circle"></i>
+                                <div>
+                                    <h4>Informasi</h4>
+                                    <p id="locationInfo">Tersedia area parkir luas dan akses mudah dari jalan utama</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="location-actions">
+                            <button class="btn-action" id="getDirections">
+                                <i class="fas fa-directions"></i> Petunjuk Arah
+                            </button>
+                            <button class="btn-action" id="shareLocation">
+                                <i class="fas fa-share-alt"></i> Bagikan Lokasi
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Gift & Protocol -->
+        <section class="protocol-section">
+            <div class="protocol-container">
+                <div class="protocol-card">
+                    <div class="protocol-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3>Amplop Digital</h3>
+                    <p>Bagi yang ingin memberikan kado atau amplop, dapat menggunakan rekening berikut:</p>
+                    <div class="bank-accounts">
+                        <div class="bank-account">
+                            <div class="bank-logo">BCA</div>
+                            <div class="bank-details">
+                                <h4>BCA - 1234567890</h4>
+                                <p>a.n. Alfat</p>
+                            </div>
+                            <button class="btn-copy" data-account="1234567890">
+                                <i class="far fa-copy"></i>
+                            </button>
+                        </div>
+                        <div class="bank-account">
+                            <div class="bank-logo">MDR</div>
+                            <div class="bank-details">
+                                <h4>Mandiri - 0987654321</h4>
+                                <p>a.n. Bintang</p>
+                            </div>
+                            <button class="btn-copy" data-account="0987654321">
+                                <i class="far fa-copy"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <p class="protocol-note">
+                        <i class="fas fa-heart"></i>
+                        Kehadiran Anda adalah hadiah terindah bagi kami
+                        <i class="fas fa-heart"></i>
+                    </p>
+                </div>
+                
+                <div class="protocol-card">
+                    <div class="protocol-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Protokol Acara</h3>
+                    <ul class="protocol-list">
+                        <li><i class="fas fa-check-circle"></i> Dress code: Pastel colors / semi formal</li>
+                        <li><i class="fas fa-check-circle"></i> Mohon datang tepat waktu</li>
+                        <li><i class="fas fa-check-circle"></i> Tetap menjaga protokol kesehatan</li>
+                        <li><i class="fas fa-check-circle"></i> Parkir tersedia di area</li>
+                        <li><i class="fas fa-check-circle"></i> Waktu kunjungan maksimal 2 jam</li>
+                    </ul>
+                    <div class="health-protocol">
+                        <h4><i class="fas fa-shield-virus"></i> Protokol Kesehatan</h4>
+                        <p>Kami menyediakan masker dan hand sanitizer di lokasi acara</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- RSVP Form -->
+        <section id="rsvp" class="rsvp-section">
+            <div class="section-header">
+                <h2 class="section-title">Konfirmasi Kehadiran</h2>
+                <p class="section-subtitle" id="rsvpDeadline">Mohon konfirmasi kehadiran Anda sebelum 10 Maret 2026</p>
+            </div>
+            <div class="rsvp-container">
+                <form id="rsvpForm" class="rsvp-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="guestName">
+                                <i class="fas fa-user"></i> Nama Lengkap
+                            </label>
+                            <input type="text" id="guestName" name="guestName" required placeholder="Masukkan nama lengkap">
+                        </div>
+                        <div class="form-group">
+                            <label for="guestEmail">
+                                <i class="fas fa-envelope"></i> Email
+                            </label>
+                            <input type="email" id="guestEmail" name="guestEmail" required placeholder="email@example.com">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="guestPhone">
+                                <i class="fas fa-phone"></i> Nomor Telepon
+                            </label>
+                            <input type="tel" id="guestPhone" name="guestPhone" required placeholder="08xxxxxxxxxx">
+                        </div>
+                        <div class="form-group">
+                            <label for="guestRelation">
+                                <i class="fas fa-users"></i> Hubungan dengan mempelai
+                            </label>
+                            <select id="guestRelation" name="guestRelation" required>
+                                <option value="">Pilih hubungan</option>
+                                <option value="family">Keluarga</option>
+                                <option value="friend">Teman</option>
+                                <option value="colleague">Rekan Kerja</option>
+                                <option value="relative">Kerabat</option>
+                                <option value="other">Lainnya</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="attendance">
+                            <i class="fas fa-calendar-check"></i> Konfirmasi Kehadiran
+                        </label>
+                        <div class="attendance-options">
+                            <label class="option-label">
+                                <input type="radio" name="attendance" value="yes" required>
+                                <span class="option-content">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Ya, saya akan hadir</span>
+                                </span>
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="attendance" value="no" required>
+                                <span class="option-content">
+                                    <i class="fas fa-times-circle"></i>
+                                    <span>Maaf, tidak dapat hadir</span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group" id="guestCountGroup">
+                        <label for="guestCount">
+                            <i class="fas fa-user-friends"></i> Jumlah Tamu
+                        </label>
+                        <div class="counter">
+                            <button type="button" class="counter-btn minus" id="decreaseGuest">-</button>
+                            <input type="number" id="guestCount" name="guestCount" value="1" min="1" max="10" readonly>
+                            <button type="button" class="counter-btn plus" id="increaseGuest">+</button>
+                        </div>
+                        <small class="helper-text">Maksimal 10 orang per undangan</small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="guestMessage">
+                            <i class="fas fa-comment-alt"></i> Ucapan & Doa
+                        </label>
+                        <textarea id="guestMessage" name="guestMessage" rows="4" placeholder="Tuliskan ucapan dan doa untuk mempelai..."></textarea>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="btn-submit">
+                            <i class="fas fa-paper-plane"></i> Kirim Konfirmasi
+                        </button>
+                        <button type="button" class="btn-share" id="shareInvitation">
+                            <i class="fas fa-share"></i> Bagikan Undangan
+                        </button>
+                    </div>
+                </form>
+                
+                <div class="rsvp-stats">
+                    <h3>Statistik Kehadiran</h3>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number" id="totalGuests">0</div>
+                            <div class="stat-label">Total Konfirmasi</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" id="attendingGuests">0</div>
+                            <div class="stat-label">Akan Hadir</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" id="notAttendingGuests">0</div>
+                            <div class="stat-label">Tidak Hadir</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" id="totalPeople">0</div>
+                            <div class="stat-label">Jumlah Orang</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Wishes Wall -->
+        <section id="wishes" class="wishes-section">
+            <div class="section-header">
+                <h2 class="section-title">Ucapan & Doa</h2>
+                <p class="section-subtitle">Kirimkan doa terbaik untuk mempelai</p>
+            </div>
+            <div class="wishes-container">
+                <div class="wishes-wall" id="wishesWall">
+                    <!-- Wishes will be loaded here -->
+                </div>
+                <div class="wishes-form">
+                    <h3>Tambah Ucapan</h3>
+                    <form id="wishForm">
+                        <div class="form-group">
+                            <input type="text" id="wishName" placeholder="Nama Anda" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="wishMessage" rows="4" placeholder="Tulis ucapan dan doa..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-wish">
+                            <i class="fas fa-paper-plane"></i> Kirim Ucapan
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Closing Section -->
+        <section class="closing-section">
+            <div class="closing-container">
+                <div class="closing-content">
+                    <h2 class="closing-title">Terima Kasih</h2>
+                    <p class="closing-message">
+                        Atas kehadiran, doa, dan restu yang diberikan,<br>
+                        kami mengucapkan terima kasih yang sebesar-besarnya.
+                    </p>
+                    <div class="closing-signature">
+                        <div class="signature groom-sign">
+                            <h4>Alfat</h4>
+                            <p>Mempelai Pria</p>
+                        </div>
+                        <div class="signature and-sign">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="signature bride-sign">
+                            <h4>Bintang</h4>
+                            <p>Mempelai Wanita</p>
+                        </div>
+                    </div>
+                    <div class="closing-contacts">
+                        <p><i class="fas fa-phone"></i> Alfat: 082281883230</p>
+                        <p><i class="fas fa-phone"></i> Bintang: 081317983887</p>
+                        <p><i class="fas fa-envelope"></i> wedding.alfatbintang@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Alfat & Bintang</h3>
+                    <p id="footerDate">10 Maret 2026</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#opening">Undangan</a>
+                    <a href="#couple">Pasangan</a>
+                    <a href="#events">Acara</a>
+                    <a href="#gallery">Galeri</a>
+                    <a href="#location">Lokasi</a>
+                    <a href="#rsvp">RSVP</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="social-icon"><i class="fas fa-envelope"></i></a>
+                </div>
+                <p class="footer-copyright">
+                    © 2026 Undangan Pernikahan Alfat & Bintang. Dibuat dengan 
+                    <i class="fas fa-heart"></i> untuk hari yang tak terlupakan.
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Modal Gallery -->
+    <div class="modal" id="galleryModal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-body">
+                <img id="modalImage" src="" alt="">
+                <div class="modal-nav">
+                    <button class="modal-prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="modal-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Toast Notifications -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <!-- Register Service Worker -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('ervis_wolker.js')
+                .then(() => console.log('Service Worker Registered'))
+                .catch(err => console.log('Service Worker Registration Failed:', err));
+        }
+    </script>
+</body>
+</html>
