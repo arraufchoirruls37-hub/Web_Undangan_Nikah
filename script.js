@@ -70,7 +70,7 @@ function initializeWebsite() {
     initNavigation();
     initCountdown();
     initMusicPlayer();
-    initGallery();
+    // Gallery function dihapus karena tidak ada foto
     initRSVPForm();
     initLocation();
     initWishes();
@@ -198,22 +198,7 @@ function initMusicPlayer() {
     });
 }
 
-function initializeWebsite() {
-    initNavigation();
-    initCountdown();
-    initMusicPlayer();
-    // initGallery(); // DIHAPUS - Tidak ada gallery
-    initRSVPForm();
-    initLocation();
-    initWishes();
-    initEventListeners();
-    
-    setTimeout(() => {
-        showToast('✨ Selamat datang di undangan pernikahan kami!', 'success');
-    }, 2000);
-}
-
-// ===== 5. RSVP FORM =====
+// ===== 4. RSVP FORM =====
 function initRSVPForm() {
     const rsvpForm = document.getElementById('rsvpForm');
     if (!rsvpForm) return;
@@ -305,7 +290,7 @@ function updateRSVPStats() {
     if (peopleEl) peopleEl.textContent = totalPeople;
 }
 
-// ===== 6. LOCATION =====
+// ===== 5. LOCATION =====
 function initLocation() {
     const locationTabs = document.querySelectorAll('.location-tab');
     const getDirectionsBtn = document.getElementById('getDirections');
@@ -413,7 +398,7 @@ function updateLocationDetails(locationId) {
     if (infoEl) infoEl.textContent = location.info;
 }
 
-// ===== 7. WISHES =====
+// ===== 6. WISHES =====
 function initWishes() {
     const wishForm = document.getElementById('wishForm');
     if (!wishForm) return;
@@ -542,7 +527,7 @@ window.likeWish = function(wishId) {
     }
 };
 
-// ===== 8. EVENT LISTENERS =====
+// ===== 7. EVENT LISTENERS =====
 function initEventListeners() {
     document.querySelectorAll('.btn-copy').forEach(btn => {
         btn.addEventListener('click', function() {
